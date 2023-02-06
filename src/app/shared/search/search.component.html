@@ -1,0 +1,51 @@
+<div class="container">
+    <form [formGroup]="searchForm" (ngSubmit)="onSearch(searchForm)">
+      <div class="row">
+        <div class="col-sm-4 mb-3 form-group">
+          <label for="origin" class="form-label">Origin</label>
+  
+          <select
+            class="form-select"
+            id="origin"
+            formControlName="origin"
+          >
+            <option>Select an origin</option>
+            <option *ngFor="let origin of origins">{{ origin }}</option>
+          </select>
+        </div>
+        <div class="col-sm-4 mb-3 form-group">
+          <label for="destination" class="form-label">Destination</label>
+          <select
+            class="form-select"
+            id="destination"
+            formControlName="destination"
+          >
+            <option selected>Select a destination</option>
+            <option *ngFor="let destination of destinations">
+              {{ destination }}
+            </option>
+          </select>
+        </div>
+        <div class="col-sm-4 mb-3 form-group">
+          <label for="flightDate" class="form-label">Flight Date</label>
+          <input
+            type="date"
+            class="form-control"
+            id="flightDate"
+            formControlName="flightDate"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button
+            type="submit"
+            [disabled]="searchForm.invalid"
+            class="btn btn-primary float-end"
+          >
+            Find Flight
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
