@@ -1,0 +1,32 @@
+{
+    "flight": [
+        {
+            "origin": "SEA",
+            "destination": "PHX",            
+            "flightNumber": 1234,
+            "departureDateTime": "2023-02-07T13:30:00.000Z",
+            "arrivalDateTime": "2023-02-07T18:00:00.000Z"        
+        },
+        {
+            "origin": "TPA",
+            "destination": "PHX",            
+            "flightNumber": 7657,
+            "departureDateTime": "2023-02-07T14:00:00.000Z",
+            "arrivalDateTime": "2023-02-07T20:00:00.000Z"        
+        },
+        {
+            "origin": "TPA",
+            "destination": "PHX",            
+            "flightNumber": 4356,
+            "departureDateTime": "2023-02-07T12:00:00.000Z",
+            "arrivalDateTime": "2023-02-07T22:30:00.000Z"        
+        },
+        {
+            "origin": "PHX",
+            "destination": "TPA",            
+            "flightNumber": 8706,
+            "departureDateTime": "2023-02-07T13:30:00.000Z",
+            "arrivalDateTime": "2023-02-07T18:00:00.000Z"        
+        }
+    ]
+}
